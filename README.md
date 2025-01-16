@@ -23,4 +23,42 @@ Este proyecto contiene una herramienta para resumir textos utilizando el modelo 
 1. **Clona el repositorio**:
    ```bash
    git clone 
-   cd 
+   cd summarize_api
+
+2. **Construye el proyecto e inicialo**:
+   ```bash
+   python3 -m venv api/venv
+   source api/venv/bin/activate
+   docker-compose up --build
+
+## Uso 📝
+
+El resumen de texto se puede realizar de la siguiente manera:
+
+   - **Resumir texto plano:**
+        Puedes proporcionar cualquier texto para resumir directamente en Postman.
+
+   - **Resumir documentos:**
+        Extrae el texto de documentos (PDF, Word, Pptx, Img, etc.) y proporciona este texto para generar resúmenes.
+
+   - **Seleccionar plantilla de resumen:**
+        Elige la plantilla adecuada para resumir diferentes tipos de contenido, como papers académicos, reuniones, correos electrónicos o un resumen general.
+
+## Estructura del Proyecto 📂
+
+- **README.md:** Este archivo con la descripción del proyecto.
+- **controller/:** Contiene los controladores que gestionan la lógica de las solicitudes y respuestas del sistema.
+- **schema/:** Define la estructura de datos y los esquemas necesarios para la base de datos o los modelos utilizados.
+- **functions/:** Contiene las funciones reutilizables para la implementación de la lógica de resumen y procesamiento de texto.
+- **chroma/:** Base de datos en SQLite3 utilizada para almacenar las API keys.
+- **repository/:** Funciones para interactuar con la base de datos, incluyendo operaciones de lectura y escritura.
+- **router/:** Define las rutas de la API o endpoints que permiten interactuar con el sistema.
+- **utils/:** Utilidades adicionales o funciones auxiliares que ayudan en tareas comunes, como el procesamiento de archivos o la gestión de configuraciones.
+- **templates/:** Carpeta con plantillas específicas para cada tipo de resumen (por ejemplo, papers académicos, reuniones, correos electrónicos, etc.).
+- **requirements.txt:** Lista de dependencias necesarias para el proyecto.
+
+## Contribuciones 🤝
+
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar el proyecto o deseas agregar nuevas plantillas o funcionalidades, abre un issue o envía un pull request.
+   
+   
