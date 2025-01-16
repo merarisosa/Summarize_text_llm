@@ -1,0 +1,23 @@
+services:
+  api:
+    build: api
+    shm_size: 4.69gb 
+    ports: 
+      - 8000:8000
+      - 8265:8265  
+    volumes:
+      - ./api:/app
+      - ./api/utils:/app/utils
+    networks:
+      - test-net
+    env_file:
+      - .env.dev
+
+
+networks:
+  test-net:
+    driver: bridge
+
+volumes:
+  test-vol:
+    driver: local
