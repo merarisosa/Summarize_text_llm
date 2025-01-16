@@ -22,7 +22,7 @@ Este proyecto contiene una herramienta para resumir textos utilizando el modelo 
 
 1. **Clona el repositorio**:
    ```bash
-   git clone 
+   git clone https://github.com/merarisosa/Summarize_text_llm.git
    cd summarize_api
 
 2. **Construye el proyecto e inicialo**:
