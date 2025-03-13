@@ -1,4 +1,4 @@
-# Resumidor de Textos con LLaMA (Local) 🚀
+# Text Summarization using LLaMA LLM 🚀
 
 Este proyecto contiene una herramienta para resumir textos utilizando el modelo **LLaMA 3.2 Vision** de manera local. La aplicación es capaz de procesar texto plano y texto proveniente de varios tipos de documentos, generando resúmenes claros y concisos. Además, incluye plantillas específicas para resumir diferentes tipos de contenido, como **papers académicos**, **reuniones**, **correos electrónicos** y **resúmenes generales**.
 
